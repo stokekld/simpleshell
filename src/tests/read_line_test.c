@@ -10,8 +10,8 @@ int main()
     line = sh_get_line();
 
     printf("%s\n", line);
-
-   free(line); 
+    
+    free(line); 
 
     return 0;
 }
