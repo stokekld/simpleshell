@@ -9,6 +9,9 @@ int main()
 
     line = sh_get_line();
 
+    if(!line)
+	return -1;
+
     printf("%s\n", line);
     
     free(line); 
