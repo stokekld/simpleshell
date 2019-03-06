@@ -1,6 +1,6 @@
 CC=gcc
 
-CFLAGS=-Wall
+CFLAGS=-Wall -I$(abspath ..)
 
 all: read_line_test
 
