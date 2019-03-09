@@ -13,7 +13,7 @@ int main()
     if(!line)
 	return -1;
 
-    tokens = sh_split_line();
+    tokens = sh_split_line(line);
 
     if(!tokens)
 	return -1;
