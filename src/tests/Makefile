@@ -5,7 +5,7 @@ CFLAGS=-Wall -I$(abspath ..)
 all: read_line_test split_line_test
 
 read_line_test: read_line_test.o ../line.o
-split_line_test: split_line_test.o
+split_line_test: split_line_test.o ../line.o
 	$(CC) -o $@ $(CFLAGS) $^
 
 %.o: %.c
