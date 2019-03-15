@@ -6,7 +6,7 @@ all: read_line_test split_line_test
 
 read_line_test: read_line_test.o ../line.o
 split_line_test: split_line_test.o ../line.o
-launch_line_test: launch_line_test.o
+launch_line_test: launch_line_test.o ../fork.o
 	$(CC) -o $@ $(CFLAGS) $^
 
 %.o: %.c

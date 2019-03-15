@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "fork.h"
+
 int main()
 {
     char **line = NULL;
